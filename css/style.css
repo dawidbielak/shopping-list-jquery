@@ -1,0 +1,162 @@
+body {
+	background-color: #C63D0F;
+	color: white;
+	min-width: 900px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+h1 {
+	text-stroke: 1px #222;
+	-webkit-text-stroke: 2px #222;
+}
+
+h3, .edit, td {
+	color: black;
+}
+
+header {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	margin-bottom: 40px;
+	box-shadow: 0 0 50px #555;
+}
+
+.input {
+	text-align: center;
+	padding: 0 0 25px 0;
+	border: 1px solid #95a5a6;
+	background-color: #FDF3E7;
+}
+
+.custinput {
+	width: 400px;
+	background-color: #333333;
+	border: 3px solid;
+	border-radius: 5px;
+	color: #ecf0f1;
+	padding: 10px 10px;
+}
+
+input.custinput:focus {
+	outline-style: none;
+	border-color: #7E8F7C;
+}
+
+.btn {
+	background-color: #7E8F7C;
+	border: 1px solid #9FAF9E;
+	border-radius: 3px;
+	color: #ecf0f1;
+	font-size: 20px;
+	padding: 8px 15px 10px 15px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+button.btn:active {
+	background-color: #19713e;
+	border-color: #1e9751;
+	outline: none;
+}
+
+button.btn:focus {
+	outline: none;
+}
+
+.list {
+	font-family: 'Gochi Hand', cursive;
+	font-size: 1.6em;
+}
+
+.edit {
+	text-decoration: underline;
+	text-align: right;
+	font-size: 14px;
+	min-width: 600px;
+}
+
+.edit span {
+	cursor: pointer;
+}
+
+.edit h3 {
+	text-align: center;
+}
+
+.items {
+	clear: both;
+	margin: 0 auto;
+}
+
+td {
+	padding: 10px 10px;
+	color: #333;
+	text-align: left;
+}
+
+thead tr {
+	border: none;
+}
+
+tr {
+	border-bottom: 1px solid #ecf0f1;
+}
+
+.cross {
+	cursor: pointer;
+}
+
+.content {
+	width: 500px;
+}
+
+.checked {
+	position: relative;
+}
+
+.checked::after {
+	content: '';
+	border-bottom: 3px solid red;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+}
+
+input[type=checkbox].box {
+	display: none;
+}
+
+input[type=checkbox].box + label.check-label {
+	padding-left: 20px;
+	height: 15px;
+	display: inline-block;
+	line-height: 15px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+input[type=checkbox].box:checked + label.check-label {
+	background-position: 0 -15px;
+}
+
+label.check-label {
+	background-image: url(http://www.csscheckbox.com/checkboxes/u/csscheckbox_d2b25024735394b3e45db98ce4cf9265.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
